@@ -7,7 +7,7 @@ public class ProductsRepository(StoreContext context) : IProductRepository
 {
   public void AddProduct(Product product)
   {
-    throw new NotImplementedException();
+    context.Products.Add(product);
   }
 
   public void DeleteProduct(Product product)
