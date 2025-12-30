@@ -1,5 +1,6 @@
 using Core.Entities;
 using Core.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data;
 
@@ -20,9 +21,9 @@ public class ProductsRepository(StoreContext context) : IProductRepository
     return await context.Products.FindAsync(id);
   }
 
-  public Task<IReadOnlyList<Product>> GetProductsAsync()
+  public async Task<IReadOnlyList<Product>> GetProductsAsync()
   {
-    throw new NotImplementedException();
+    return await context.Products.ToListAsync();
   }
 
   public bool ProductExists(int id)
