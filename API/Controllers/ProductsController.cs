@@ -54,7 +54,14 @@ public class ProductsController : ControllerBase
 
     return NoContent();
   }
-  
+
+  [HttpDelete("{id:int}")]
+  public async Task<ActionResult> DeleteProduct(int id)
+  {
+    
+  }
+
+
   private bool ProductExists(int id)
   {
     return context.Products.Any(x => x.Id == id);
