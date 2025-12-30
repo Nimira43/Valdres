@@ -62,7 +62,11 @@ public class ProductsController : ControllerBase
 
     if (product == null) return NotFound();
 
-  
+    context.Products.Remove(product);
+
+    await context.SaveChangesAsync();
+
+    return NoContent();
   }
 
 
