@@ -38,6 +38,6 @@ public class ProductsRepository(StoreContext context) : IProductRepository
 
   public void UpdateProduct(Product product)
   {
-    throw new NotImplementedException();
+    context.Entry(product).State = EntityState.Modified;
   }
 }
