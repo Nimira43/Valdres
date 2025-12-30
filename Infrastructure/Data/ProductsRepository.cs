@@ -15,9 +15,9 @@ public class ProductsRepository(StoreContext context) : IProductRepository
     context.Products.Remove(product);
   }
 
-  public Task<Product?> GetProductByIdAsync(int id)
+  public async Task<Product?> GetProductByIdAsync(int id)
   {
-    throw new NotImplementedException();
+    return await context.Products.FindAsync(id);
   }
 
   public Task<IReadOnlyList<Product>> GetProductsAsync()
