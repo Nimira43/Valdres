@@ -28,7 +28,7 @@ public class ProductsRepository(StoreContext context) : IProductRepository
 
   public bool ProductExists(int id)
   {
-    throw new NotImplementedException();
+    return context.Products.Any(x => x.Id == id);
   }
 
   public Task<bool> SaveChangesAsync()
