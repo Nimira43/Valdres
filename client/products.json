@@ -109,7 +109,7 @@
   },
   {
     "Name": "Green Aston Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "A versatile glove set offering reliable insulation and durable construction. The Green Aston Gloves provide a secure fit and dependable grip, ideal for casual skiing and winter adventures.",
     "Price": 14,
     "PictureUrl": "/images/products/green-aston-gloves.png",
     "Type": "Gloves",
@@ -118,7 +118,7 @@
   },
   {
     "Name": "Red NimiraTech Boots",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "High-performance ski boots designed for responsive control and all-day comfort. The Red NimiraTech Boots feature an adjustable fit system and supportive shell, ideal for intermediate to advanced skiers.",
     "Price": 250,
     "PictureUrl": "/images/products/red-nimiratech-boots.png",
     "Type": "Boots",
@@ -127,7 +127,7 @@
   },
   {
     "Name": "Red Venom Boots",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "A dynamic boot built for power and precision. The Red Venom Boots offer a firm flex and secure heel hold, giving confident skiers excellent stability on challenging terrain.",
     "Price": 189.99,
     "PictureUrl": "/images/products/red-venom-boots.png",
     "Type": "Boots",
