@@ -14,4 +14,15 @@ builder.Services.AddScoped<IProductRepository, ProductsRepository>();
 var app = builder.Build();
 
 app.MapControllers();
+
+try
+{
+  
+}
+catch (System.Exception)
+{
+  
+  throw;
+}
+
 app.Run();
