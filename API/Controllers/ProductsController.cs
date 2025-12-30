@@ -35,6 +35,10 @@ public class ProductsController : ControllerBase
   [HttpPost]
   public async Task<ActionResult<Product>> CreateProduct(Product product)
   {
-    
+    context.Products.Add(product);
+
+    await context.SaveChangesAsync();
+
+    return product;
   }
 }
