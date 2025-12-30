@@ -31,12 +31,12 @@ public class ProductsController(IProductRepository repo) : ControllerBase
   {
     repo.AddProduct(product);
 
-    if (repo.SaveChangesAsync())
+    if (await repo.SaveChangesAsync())
     {
       return CreatedAtAction("GetProduct", new {id = product.Id}, product);
     }
 
-    return product;
+    return BadRequest("Problem creating product");
   }
 
   [HttpPut("{id:int}")]
