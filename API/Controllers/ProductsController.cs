@@ -48,5 +48,8 @@ public class ProductsController : ControllerBase
 
   }
   
-  
+  private bool ProductExists(int id)
+  {
+    return context.Products.Any(x => x.Id == id);
+  }
 }
