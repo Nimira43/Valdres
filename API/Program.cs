@@ -21,6 +21,7 @@ try
   var services = scope.ServiceProvider;
   var context = services.GetRequiredService<StoreContext>();
   await context.Database.MigrateAsync();
+  await StoreContextSeed.SeedAsync(context);
 }
 catch (System.Exception)
 {
