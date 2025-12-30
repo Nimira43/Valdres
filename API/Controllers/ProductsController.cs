@@ -27,6 +27,8 @@ public class ProductsController : ControllerBase
   {
     var product = await context.Products.FindAsync(id);
 
+    if (product == null) return NotFound();
+
     return product;
   }
 }
