@@ -47,8 +47,8 @@ public class ProductsController : ControllerBase
   {
     if (product.Id != id || !ProductExists(id))
       return BadRequest("Cannot update this product");
-      
-    
+
+    context.Entry(product).State = EntityState.Modified;
   }
   
   private bool ProductExists(int id)
