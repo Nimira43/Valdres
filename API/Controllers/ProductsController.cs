@@ -31,4 +31,10 @@ public class ProductsController : ControllerBase
 
     return product;
   }
+
+  [HttpPost]
+  public async Task<ActionResult<Product>> CreateProduct()
+  {
+    
+  }
 }
