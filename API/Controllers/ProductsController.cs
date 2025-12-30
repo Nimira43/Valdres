@@ -51,6 +51,8 @@ public class ProductsController : ControllerBase
     context.Entry(product).State = EntityState.Modified;
 
     await context.SaveChangesAsync();
+
+    return NoContent();
   }
   
   private bool ProductExists(int id)
