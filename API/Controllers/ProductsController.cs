@@ -1,3 +1,4 @@
+using Core.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
@@ -6,5 +7,6 @@ namespace API.Controllers;
 [Route("api/[controller]")]
 public class ProductsController : ControllerBase
 {
-
+  [HttpGet]
+  public async Task<ActionResult<IEnumerable<Product>>>
 }
