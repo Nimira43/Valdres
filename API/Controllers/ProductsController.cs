@@ -33,7 +33,7 @@ public class ProductsController : ControllerBase
   }
 
   [HttpPost]
-  public async Task<ActionResult<Product>> CreateProduct()
+  public async Task<ActionResult<Product>> CreateProduct(Product product)
   {
     
   }
