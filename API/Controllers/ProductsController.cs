@@ -8,5 +8,5 @@ namespace API.Controllers;
 public class ProductsController : ControllerBase
 {
   [HttpGet]
-  public async Task<ActionResult<IEnumerable<Product>>>
+  public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
 }
