@@ -58,7 +58,7 @@ public class ProductsController(IProductRepository repo) : ControllerBase
   [HttpDelete("{id:int}")]
   public async Task<ActionResult> DeleteProduct(int id)
   {
-    var product = await context.Products.FindAsync(id);
+    var product = await repo.GetProductByIdAsync(id);
 
     if (product == null) return NotFound();
 
