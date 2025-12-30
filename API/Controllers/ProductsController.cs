@@ -49,6 +49,8 @@ public class ProductsController : ControllerBase
       return BadRequest("Cannot update this product");
 
     context.Entry(product).State = EntityState.Modified;
+
+    await context.SaveChangesAsync();
   }
   
   private bool ProductExists(int id)
