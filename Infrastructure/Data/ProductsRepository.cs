@@ -12,7 +12,7 @@ public class ProductsRepository(StoreContext context) : IProductRepository
 
   public void DeleteProduct(Product product)
   {
-    throw new NotImplementedException();
+    context.Products.Remove(product);
   }
 
   public Task<Product?> GetProductByIdAsync(int id)
