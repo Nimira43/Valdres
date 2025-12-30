@@ -19,7 +19,7 @@ public class ProductsController(IProductRepository repo) : ControllerBase
   [HttpGet("{id:int}")]
   public async Task<ActionResult<Product>> GetProduct(int id)
   {
-    var product = await context.Products.FindAsync(id);
+    var product = await repo.GetProductByIdAsync(id);
 
     if (product == null) return NotFound();
 
