@@ -45,11 +45,14 @@ public class ProductsController(IProductRepository repo) : ControllerBase
     if (product.Id != id || !ProductExists(id))
       return BadRequest("Cannot update this product");
 
-    context.Entry(product).State = EntityState.Modified;
+    repo.UpdateProduct(product);
 
-    await context.SaveChangesAsync();
+    if (await repo.SaveChangesAsync())
+    {
+      
+    }
 
-    return NoContent();
+      return NoContent();
   }
 
   [HttpDelete("{id:int}")]
