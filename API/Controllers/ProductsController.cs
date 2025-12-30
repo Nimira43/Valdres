@@ -62,11 +62,14 @@ public class ProductsController(IProductRepository repo) : ControllerBase
 
     if (product == null) return NotFound();
 
-    context.Products.Remove(product);
+    repo.DeleteProduct(product);
 
-    await context.SaveChangesAsync();
+    if (await repo.SaveChangesAsync())
+    {
+      return NoContent();
+    }
 
-    return NoContent();
+    return BadRequest("Problem deleting the product");
   }
 
   private bool ProductExists(int id)
