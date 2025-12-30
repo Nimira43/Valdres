@@ -17,7 +17,7 @@ app.MapControllers();
 
 try
 {
-  
+  using var scope = app.Services.CreateScope();
 }
 catch (System.Exception)
 {
