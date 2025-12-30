@@ -45,7 +45,10 @@ public class ProductsController : ControllerBase
   [HttpPut("{id:int}")]
   public async Task<ActionResult> UpdateProduct(int id, Product product)
   {
-
+    if (product.Id != id || !ProductExists(id))
+      return BadRequest("Cannot update this product");
+      
+    
   }
   
   private bool ProductExists(int id)
