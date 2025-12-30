@@ -5,6 +5,13 @@ namespace Infrastructure.Data;
 
 public class ProductsRepository : IProductRepository
 {
+
+  private readonly StoreContext context;
+  public ProductsRepository(StoreContext context)
+  {
+    this.context = context;
+  }
+
   public void AddProduct(Product product)
   {
     throw new NotImplementedException();
