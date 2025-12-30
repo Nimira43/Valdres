@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Mvc;
+
 namespace API.Controllers;
 
-public class ProductsController
+public class ProductsController : ControllerBase
 {
 
 }
