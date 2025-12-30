@@ -49,10 +49,10 @@ public class ProductsController(IProductRepository repo) : ControllerBase
 
     if (await repo.SaveChangesAsync())
     {
-      
+      return NoContent();
     }
 
-      return NoContent();
+    return BadRequest("Problem updating the product");
   }
 
   [HttpDelete("{id:int}")]
