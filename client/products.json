@@ -91,7 +91,7 @@
   },
   {
     "Name": "Green Phaser Gloves",
-    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Description": "A rugged pair of gloves designed for cold-weather performance. The Green Phaser Gloves offer strong grip, wind protection, and a comfortable inner lining for long-lasting wear.",
     "Price": 15,
     "PictureUrl": "/images/products/green-phaser-gloves.png",
     "Type": "Gloves",
@@ -100,7 +100,7 @@
   },
   {
     "Name": "Purple NimiraTech Gloves",
-    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Description": "Technical winter gloves engineered for warmth and dexterity. The Purple NimiraTech Gloves use lightweight insulation and a water-resistant shell, making them suitable for both skiing and general outdoor activity.",
     "Price": 16,
     "PictureUrl": "/images/products/purple-nimiratech-gloves.png",
     "Type": "Gloves",
