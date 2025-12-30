@@ -23,9 +23,9 @@ try
   await context.Database.MigrateAsync();
   await StoreContextSeed.SeedAsync(context);
 }
-catch (System.Exception)
+catch (Exception ex)
 {
-  
+  Console.WriteLine(ex); 
   throw;
 }
 
