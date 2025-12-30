@@ -1,0 +1,164 @@
+[
+  {
+    "Name": "NimiraTech Speedster Board 2000",
+    "Description": "A lightweight, responsive all-mountain board engineered for riders who want speed without sacrificing control. The Speedster 2000 features a reinforced core and precision edge profile, making it ideal for carving, fast descents, and confident handling on mixed terrain.",
+    "Price": 200,
+    "PictureUrl": "/images/products/nimiratech-speedster.png",
+    "Type": "Boards",
+    "Brand": "NimiraTech",
+    "QuantityInStock": 68
+  },
+  {
+    "Name": "NimiraTech Board 3000",
+    "Description": "A versatile beginner-to-intermediate board designed for stability and easy progression. The Board 3000 offers a forgiving flex pattern and smooth turn initiation, perfect for riders building confidence on groomed runs.",
+    "Price": 150,
+    "PictureUrl": "/images/products/nimiratech-board.png",
+    "Type": "Boards",
+    "Brand": "NimiraTech",
+    "QuantityInStock": 75
+  },
+  {
+    "Name": "Morgana Board Speed Rush 3",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 180,
+    "PictureUrl": "/images/products/morgana-speed-rush.png",
+    "Type": "Boards",
+    "Brand": "Morgana",
+    "QuantityInStock": 3
+  },
+  {
+    "Name": "Morgana Speed Board",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 300,
+    "PictureUrl": "/images/products/morgana-speed-board.png",
+    "Type": "Boards",
+    "Brand": "Morgana",
+    "QuantityInStock": 52
+  },
+  {
+    "Name": "Venom Super Board",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 250,
+    "PictureUrl": "/images/products/venom-super-board.png",
+    "Type": "Boards",
+    "Brand": "Venom",
+    "QuantityInStock": 97
+  },
+  {
+    "Name": "Phantom Entry Board",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 120,
+    "PictureUrl": "/images/products/phantom-entry-board.png",
+    "Type": "Boards",
+    "Brand": "Phantom",
+    "QuantityInStock": 37
+  },
+  {
+    "Name": "Blue Morgana Cap",
+    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 10,
+    "PictureUrl": "/images/products/blue-morgana-cap.png",
+    "Type": "Hats",
+    "Brand": "Morgana",
+    "QuantityInStock": 32
+  },
+  {
+    "Name": "Green Skyline Beanie",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 8,
+    "PictureUrl": "/images/products/green-skyline-beanie.png",
+    "Type": "Hats",
+    "Brand": "Skyline",
+    "QuantityInStock": 6
+  },
+  {
+    "Name": "Purple Phaser Cap",
+    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 15,
+    "PictureUrl": "/images/products/purple-phaser-cap.png",
+    "Type": "Hats",
+    "Brand": "Phaser",
+    "QuantityInStock": 17
+  },
+  {
+    "Name": "Blue Skyline Gloves",
+    "Description": "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
+    "Price": 18,
+    "PictureUrl": "/images/products/blue-skyline-gloves.png",
+    "Type": "Gloves",
+    "Brand": "Skyline",
+    "QuantityInStock": 74
+  },
+  {
+    "Name": "Green Phaser Gloves",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 15,
+    "PictureUrl": "/images/products/green-phaser-gloves.png",
+    "Type": "Gloves",
+    "Brand": "Phaser",
+    "QuantityInStock": 19
+  },
+  {
+    "Name": "Purple NimiraTech Gloves",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.",
+    "Price": 16,
+    "PictureUrl": "/images/products/purple-nimiratech-gloves.png",
+    "Type": "Gloves",
+    "Brand": "NimiraTech",
+    "QuantityInStock": 77
+  },
+  {
+    "Name": "Green Aston Gloves",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 14,
+    "PictureUrl": "/images/products/green-aston-gloves.png",
+    "Type": "Gloves",
+    "Brand": "Aston",
+    "QuantityInStock": 45
+  },
+  {
+    "Name": "Red NimiraTech Boots",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 250,
+    "PictureUrl": "/images/products/red-nimiratech-boots.png",
+    "Type": "Boots",
+    "Brand": "NimiraTech",
+    "QuantityInStock": 49
+  },
+  {
+    "Name": "Red Venom Boots",
+    "Description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Price": 189.99,
+    "PictureUrl": "/images/products/red-venom-boots.png",
+    "Type": "Boots",
+    "Brand": "Venom",
+    "QuantityInStock": 28
+  },
+  {
+    "Name": "Purple Morgana Boots",
+    "Description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
+    "Price": 199.99,
+    "PictureUrl": "/images/products/purple-morgana-boots.png",
+    "Type": "Boots",
+    "Brand": "Morgana",
+    "QuantityInStock": 69
+  },
+  {
+    "Name": "Purple Skyline Boots",
+    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Price": 150,
+    "PictureUrl": "/images/products/purple-skyline-boots.png",
+    "Type": "Boots",
+    "Brand": "Skyline",
+    "QuantityInStock": 35
+  },
+  {
+    "Name": "Blue Venom Boots",
+    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Price": 180,
+    "PictureUrl": "/images/products/blue-venom-boots.png",
+    "Type": "Boots",
+    "Brand": "Venom",
+    "QuantityInStock": 27
+  }
+]
