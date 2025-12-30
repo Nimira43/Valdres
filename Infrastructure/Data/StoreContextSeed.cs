@@ -12,6 +12,12 @@ public class StoreContextSeed
       var productsData = await File.ReadAllTextAsync("../Infrastructure/Data/SeedData/products.json");
 
       var products = JsonSerializer.Deserialize<List<Product>>(productsData);
+
+      if (products == null) return;
+
+      context.Products.AddRange(products);
+
+      await context.SaveChangesAsync();
     }
   }
 }
