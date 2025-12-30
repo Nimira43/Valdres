@@ -31,9 +31,9 @@ public class ProductsRepository(StoreContext context) : IProductRepository
     return context.Products.Any(x => x.Id == id);
   }
 
-  public Task<bool> SaveChangesAsync()
+  public async Task<bool> SaveChangesAsync()
   {
-    throw new NotImplementedException();
+    return await context.SaveChangesAsync() > 0;
   }
 
   public void UpdateProduct(Product product)
