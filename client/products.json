@@ -46,7 +46,7 @@
   },
   {
     "Name": "Phantom Entry Board",
-    "Description": "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
+    "Description": "A reliable entry-level board built for comfort and control. The Phantom Entry Board features a soft flex and catch-free design, helping new riders learn turns, balance, and speed management with ease.",
     "Price": 120,
     "PictureUrl": "/images/products/phantom-entry-board.png",
     "Type": "Boards",
@@ -55,7 +55,7 @@
   },
   {
     "Name": "Blue Morgana Cap",
-    "Description": "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
+    "Description": "A warm, breathable winter cap made from soft-knit fibres. The Blue Morgana Cap provides everyday comfort on and off the slopes, with a snug fit that keeps heat in during cold mountain conditions.",
     "Price": 10,
     "PictureUrl": "/images/products/blue-morgana-cap.png",
     "Type": "Hats",
@@ -64,7 +64,7 @@
   },
   {
     "Name": "Green Skyline Beanie",
-    "Description": "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
+    "Description": "A lightweight, insulated beanie designed for active use. The Green Skyline Beanie offers moisture-wicking fabric and a low-profile fit, ideal for layering under helmets or wearing around the resort.",
     "Price": 8,
     "PictureUrl": "/images/products/green-skyline-beanie.png",
     "Type": "Hats",
