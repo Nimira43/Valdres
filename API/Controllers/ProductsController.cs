@@ -29,9 +29,12 @@ public class ProductsController(IProductRepository repo) : ControllerBase
   [HttpPost]
   public async Task<ActionResult<Product>> CreateProduct(Product product)
   {
-    context.Products.Add(product);
+    repo.AddProduct(product);
 
-    await context.SaveChangesAsync();
+    if (repo.SaveChangesAsync())
+    {
+      return CreatedAtAction("GetProduct", new {id = product.Id}, product);
+    }
 
     return product;
   }
