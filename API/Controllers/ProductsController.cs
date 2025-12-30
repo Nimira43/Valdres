@@ -41,4 +41,12 @@ public class ProductsController : ControllerBase
 
     return product;
   }
+
+  [HttpPut("{id:int}")]
+  public async Task<ActionResult> UpdateProduct(int id, Product product)
+  {
+
+  }
+  
+  
 }
