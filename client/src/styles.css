@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nova+Script&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+}
+
+.logo-text {
+  font-family: 'Nova Script', system-ui;
+}
+
+.transitioning {
+  transition: all 0.5s ease-in-out;
+}
+
+.input-border {
+  @apply border border-grey-2 focus:border-dark rounded outline-none transitioning;
+}
+
+.main-btn {
+  @apply bg-main-dark text-light hover:bg-main uppercase font-medium rounded transitioning cursor-pointer
+}
