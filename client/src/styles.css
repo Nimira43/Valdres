@@ -24,3 +24,5 @@
 .main-btn {
   @apply bg-main-dark text-light hover:bg-main uppercase font-medium rounded transitioning cursor-pointer
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
