@@ -4,9 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --main: #f59e0b;
+  --main-light: #fde68a;
+  --main-dark: #d97706;
+  --support: #ff4500;
+  --dark: #111;
+  --light: #fffdf2;
+  --grey-1: #333;
+  --grey-2: #999;
+  --grey-3: #ccc;
+  --grey-4: #eee;
+  --grey-5: #fafafa;
+  --transitioning: all 0.5s ease-in-out
+}
+
 * {
   font-family: 'Mulish', sans-serif;
   font-weight: 300;
+}
+
+button {
+  text-transform: uppercase !important;
 }
 
 .logo-text {
@@ -14,15 +33,66 @@
 }
 
 .transitioning {
-  transition: all 0.5s ease-in-out;
+  transition: var(--transitioning);
 }
 
-.input-border {
-  @apply border border-grey-2 focus:border-dark rounded outline-none transitioning;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: var(--transitioning);
+  border-width: 2px;
+  border-style: solid;
+  user-select: none;
 }
 
-.main-btn {
-  @apply bg-main-dark text-light hover:bg-main uppercase font-medium rounded transitioning cursor-pointer
+.main-solid-btn {
+  background-color: var(--main-dark);
+  color: var(--light);
+  border-color: var(--main-dark);
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.main-solid-btn:hover {
+  background-color: var(--main);
+  border-color: var(--main);
+}
+
+.dark-solid-btn {
+  background-color: var(--dark);
+  color: var(--light);
+  border-color: var(--dark);
+}
+
+.dark-solid-btn:hover {
+  background-color: black;
+  border-color: black;
+}
+
+.main-outline-btn {
+  background-color: transparent;
+  color: var(--main-dark);
+  border-color: var(--main-dark);
+}
+
+.main-outline-btn:hover {
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+.dark-outline-btn {
+  background-color: transparent;
+  color: var(--dark);
+  border-color: var(--dark);
+}
+
+.dark-outline-btn:hover {
+  color: var(--main-dark);
+  border-color: var(--main-dark);
+}
