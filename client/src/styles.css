@@ -96,3 +96,7 @@ button {
   color: var(--main-dark);
   border-color: var(--main-dark);
 }
+
+.container {
+  @apply mx-auto px-6;
+}
