@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { Component, inject, OnInit } from '@angular/core'
 import { ShopService } from '../../core/services/shop.service'
 import { Product } from '../../shared/models/product'
@@ -7,6 +8,7 @@ import { FiltersDialogComponent } from './filters-dialog/filters-dialog.componen
 import { MatIcon } from '@angular/material/icon'
 import { MatCard } from '@angular/material/card'
 import { MatMenu, MatMenuTrigger } from '@angular/material/menu'
+import { MatIconButton } from '@angular/material/button'
 import { MatListOption, MatSelectionList, MatSelectionListChange } from '@angular/material/list'
 import { ShopParams } from '../../shared/models/shopParams'
 import { MatPaginator, PageEvent } from '@angular/material/paginator'
@@ -21,8 +23,10 @@ import { Pagination } from '../../shared/models/pagination'
     MatSelectionList,
     MatListOption,
     MatMenuTrigger,
-    MatPaginator
-  ],
+    MatPaginator,
+    FormsModule,
+    MatIconButton
+],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.css',
 })
@@ -55,6 +59,11 @@ export class ShopComponent implements OnInit{
         next: response => this.products = response,
         error: error => console.log(error),
       })
+  }
+
+  onSearchChange() {
+    this.shopParams.pageNumber = 1
+    this.getProducts()
   }
 
   handlePageEvent(event: PageEvent) {

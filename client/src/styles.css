@@ -100,3 +100,25 @@ button {
 .container {
   @apply mx-auto px-6;
 }
+
+.mat-mdc-paginator .mdc-notched-outline__leading,
+.mat-mdc-paginator .mdc-notched-outline__notch,
+.mat-mdc-paginator .mdc-notched-outline__trailing {
+  border-color: var(--main-dark) !important;
+  transition: var(--transitioning);
+}
+
+.mat-mdc-paginator .mat-mdc-form-field:hover .mdc-notched-outline__leading,
+.mat-mdc-paginator .mat-mdc-form-field:hover .mdc-notched-outline__notch,
+.mat-mdc-paginator .mat-mdc-form-field:hover .mdc-notched-outline__trailing {
+  border-color: var(--dark) !important;
+}
+
+.mat-mdc-paginator .mat-mdc-select-value {
+  color: var(--main-dark);
+  font-weight: bold !important;
+}
+
+.mat-mdc-paginator .mat-mdc-select-arrow {
+  color: var(--main-dark) !important;
+} 
