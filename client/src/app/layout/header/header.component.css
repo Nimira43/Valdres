@@ -1,30 +1,37 @@
-.custom-badge .mat-badge-content {
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  line-height: 24px;
-  background-color: var(--main-dark);
-  transition: var(--transitioning)
-}
-
-.custom-badge:hover .mat-badge-content {
-  background-color: var(--main);
-}
-
-.custom-badge .mat-icon {
-  font-size: 32px;
+.custom-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 32px;
   height: 32px;
 }
 
-/* 'main': '#f59e0b',
-'main-light': '#fde68a',
-'main-dark': '#d97706',
-'support': '#ff4500',
-'dark': '#111',
-'light': '#fffdf2',
-'grey-1': '#333',
-'grey-2': '#999',
-'grey-3': '#ccc',
-'grey-4': '#eee',
-'grey-5': '#fafafa', */
+.custom-badge .mat-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--main-dark);
+  transition: var(--transitioning);
+}
+
+.custom-badge:hover .mat-icon {
+  color: var(--dark);
+}
+
+.custom-badge .mat-badge-content {
+  width: 18px !important;
+  height: 18px !important;
+  font-size: 10px !important;
+  line-height: 18px !important;
+  background-color: var(--main-dark) !important;
+  color: var(--light) !important;
+  transition: var(--transitioning);
+  top: -4px !important;
+  right: -4px !important;
+}
+
+.custom-badge:hover .mat-badge-content {
+  background-color: var(--dark) !important;
+}
+
