@@ -35,3 +35,6 @@
   background-color: var(--dark) !important;
 }
 
+a.active {
+  color: var(--main-dark);
+}
