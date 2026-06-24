@@ -16,6 +16,7 @@ import { Pagination } from '../../shared/models/pagination'
 
 @Component({
   selector: 'app-shop',
+  standalone: true,
   imports: [
     ProductItemComponent,
     MatIcon,
