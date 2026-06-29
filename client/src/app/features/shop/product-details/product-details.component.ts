@@ -1,3 +1,4 @@
+import { CurrencyPipe } from '@angular/common'
 import { Component, inject, OnInit } from '@angular/core'
 import { ShopService } from '../../../core/services/shop.service'
 import { ActivatedRoute } from '@angular/router'
@@ -6,7 +7,9 @@ import { Product } from '../../../shared/models/product'
 @Component({
   selector: 'app-product-details',
   standalone: true,
-  imports: [],
+  imports: [
+    CurrencyPipe,
+],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css',
 })

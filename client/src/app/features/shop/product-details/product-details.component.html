@@ -1,4 +1,43 @@
 @if (product) {
-  <h1 className='text-2xl'>{{product.name}}</h1>
+<section class="py-8">
+  <div class="max-w-screen-2xl px-4 mx-auto">
+    <div class="grid grid-cols-2 gap-8">      
+      <div class="max-w-xl mx-auto">
+        <img 
+          class="w-full rounded-md" 
+          src="{{product.pictureUrl}}" 
+          alt="Product Image"
+        >
+      </div>
+      <div>
+        <h1 class="text-2xl font-medium text-dark">
+          {{product.name}}
+        </h1>
+        <div class="mt-4 flex items-center gap-4">
+          <p class="text-3xl font-semibold text-main-dark">
+            {{product.price | currency:'GBP'}}
+          </p>
+        </div>
+        <div class="flex gap-4 mt-6 items-end">
+          <button class="btn main-solid-btn px-3 py-2">
+            Add to Cart
+          </button>
+          <div class="w-28">
+            <label class="block text-center text-sm font-medium mb-1 text-grey-1">
+              Quantity
+            </label>
+            <input 
+              type="search" 
+              class="block w-full p-2.5 text-sm outline-none border-2 border-main-dark focus:border-dark hover:border-dark rounded transitioning" 
+            />
+          </div>
+        </div>
+        <div class="my-6 border-t border-grey-3"></div>
+        <p class="mb-6 text-grey-1 leading-relaxed">
+          {{product.description}}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 }
-
