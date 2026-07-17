@@ -1,14 +1,24 @@
 @use '@angular/material' as mat;
 
 html {
-  @include mat.theme((
-    color: (
-      primary: mat.$cyan-palette,
-      tertiary: mat.$orange-palette,
-    ),
-    typography: Roboto,
-    density: 0,
-  ));
+  @include mat.theme((color: (primary: mat.$cyan-palette,
+        tertiary: mat.$orange-palette,
+      ),
+      typography: Roboto,
+      density: 0,
+    ));
+}
+
+.snack-error {
+  @include mat.snack-bar-overrides((container-color: red,
+      button-color: white,
+      supporting-text-color: white));
+}
+
+.snack-success {
+  @include mat.snack-bar-overrides((container-color: green,
+      button-color: white,
+      supporting-text-color: white));
 }
 
 body {
