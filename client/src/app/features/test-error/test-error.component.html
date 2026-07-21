@@ -30,3 +30,15 @@
     Test 400 Validation Error
   </button>
 </div>
+
+@if (validationErrors) {
+  <div class="mx-auto max-w-lg mt-5 bg-light shadow-md p-5 border border-main-dark rounded">
+    <ul class="'space-y-2 p-2">
+      @for (error of validationErrors; track $index) {
+        <li class="text-dark font-medium text-center">
+          {{error}}
+        </li>
+      }
+    </ul>
+  </div>
+}
