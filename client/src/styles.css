@@ -10,7 +10,7 @@
   --main-dark: #d97706;
   --support: #ff4500;
   --dark: #111;
-  --light: #fffdf2;
+  --light: #fffdfa;
   --grey-1: #333;
   --grey-2: #999;
   --grey-3: #ccc;
@@ -98,6 +98,10 @@ button {
 
 .container {
   @apply mx-auto px-6;
+}
+
+.mat-mdc-paginator {
+  background-color: var(--light) !important;
 }
 
 .mat-mdc-paginator .mdc-notched-outline__leading,

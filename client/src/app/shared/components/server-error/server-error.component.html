@@ -1,5 +1,28 @@
-<div class="container mt-5">
-  <h1 class="text-3xl">
+<div class="container mt-5 p-4 bg-light rounded shadow-md border border-main-dark">
+  <h1 class="text-2xl font-medium mb-4">
     Internal Server Error
   </h1>
+  @if (error) {
+    <h5 class="text-red-500 font-medium">
+      Error: {{error.message}}
+    </h5>
+    <p class="mb-2">This is a API server error. This is not coming from Angular client.</p>
+    <p class="mb-2">What to do next?</p>
+    <ol class="'text-decimal ml-5 mb-4">
+      <li class="mb-1">
+        Check the network tab in the dev tools
+      </li>
+      <li class="mb-1">
+        Reproduce error in Postman. If the error is the same don't waste time checking Angular code.
+      </li>
+    </ol>
+    <h5 class="text-red-500 font-medium mb-2">
+      Stack Trace  
+    </h5>
+    <mat-card class="p-4">
+      <code class="block whitespace-pre-wrap">
+        {{error.details}}
+      </code>
+    </mat-card>
+  }
 </div>
