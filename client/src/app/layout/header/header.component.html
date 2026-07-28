@@ -1,4 +1,4 @@
-<header class="border-b shadow-md p-3 w-full bg-main-light">
+<header class="border-b shadow-md p-3 w-full bg-main-light max-h-20 fixed top-0 z-50">
   <div class="flex align-middle items-center justify-between max-w-screen-2xl mx-auto">
     <a 
       routerLink="/"
@@ -48,3 +48,10 @@
     </div>
   </div>
 </header>
+
+@if (busyService.loading) {
+  <mat-progress-bar 
+    mode="indeterminate"
+    class="fixed z-50"
+  ></mat-progress-bar>
+}
