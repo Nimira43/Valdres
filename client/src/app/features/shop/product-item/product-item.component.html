@@ -16,8 +16,13 @@
         {{product.price | currency: 'GBP' }}
       </p>
     </mat-card-content>
-    <mat-card-actions>
-      <button class="btn main-solid-btn w-full py-2">
+    <mat-card-actions
+      (click)="$event.stopPropagation()"
+    >
+      <button 
+        class="btn main-solid-btn w-full py-2"
+        (click)="cartService.addItemToCart(product)"  
+      >
         <mat-icon>add_shopping_cart</mat-icon>
         Add to Cart
       </button>
