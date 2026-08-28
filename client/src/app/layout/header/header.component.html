@@ -32,7 +32,7 @@
       <a 
         routerLink="/cart"
         routerLinkActive="active"
-        matBadge="6" 
+        matBadge="{{cartService.itemCount()}}" 
         matBadgeSize="small" 
         matBadgePosition="above after" 
         matBadgeColor="warn"
