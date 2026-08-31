@@ -1,0 +1,74 @@
+<div class="mx-auto max-w-4xl flex-1 space-y-6 w-full">
+  <div class="space-y-4 rounded border border-grey-4 shadow-sm p-4">
+    <p class="text-xl font-medium text-center">
+      Order Summary
+    </p>
+    <div class="space-y-4">
+      <div class="space-y-2">
+        <dl class="flex items-center justify-between gap-4">
+          <dt>
+            Subtotal
+          </dt>
+          <dd>
+            £200.00
+          </dd>
+        </dl>
+        <dl class="flex items-center justify-between gap-4">
+          <dt>
+            Discount
+          </dt>
+          <dd>
+            -£0.00
+          </dd>
+        </dl>
+        <dl class="flex items-center justify-between gap-4">
+          <dt>
+            Delivery Fee
+          </dt>
+          <dd>
+            £10.00
+          </dd>
+        </dl>
+      </div>
+      <dl class="flex items-center justify-between border-t border-grey-3 gap-4 pt-2">
+        <dt class="font-medium">
+          Total
+        </dt>
+        <dd class="font-medium">
+          £10.00
+        </dd>
+      </dl>
+    </div>
+
+    <div class="flex flex-xol gap-2">
+      <button 
+        routerLink="/checkout"
+        class="btn main-outline-btn px-2 py-1 w-full"
+      >
+        Checkout
+      </button>
+      <button 
+        routerLink="/shop"
+        class="btn main-outline-btn px-2 py-1 w-full"
+      >
+        Shop
+      </button>
+    </div>
+  </div>
+
+  <div class="space-y-4 rounded border border-grey-4 shadow-sm p-4">
+    <form class="flex flex-col py-2">
+      <label class="mb-4 block text-xl font-medium text-center">
+        Do you have a voucher?
+      </label>
+      <input 
+        type="text"
+        class="block w-full p-2 text-sm outline-none border-2 border-main-dark focus:border-dark hover:border-dark rounded transitioning"
+        placeholder="Voucher code..." 
+      />
+      <button class="btn main-outline-btn px-2 py-1 mt-4">
+        Apply Voucher
+      </button>
+    </form>
+  </div>
+</div>
