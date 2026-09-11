@@ -12,13 +12,19 @@
     </a>
     <div class="flex items-center justify-between order-3">
       <div class="flex items-center align-middle gap-3">
-        <button class="btn main-outline-btn px-2 py-1">
+        <button 
+          class="btn main-outline-btn px-2 py-1"
+          (click)="decrementQuantity()"
+        >
           <mat-icon>remove</mat-icon>
         </button>
         <div className="text-xl mb-1">
           {{item().quantity}}
         </div>
-        <button class="btn main-outline-btn px-2 py-1">
+        <button 
+          class="btn main-outline-btn px-2 py-1"
+          (click)="incrementQuantity()"  
+        >
           <mat-icon>add</mat-icon>
         </button>
       </div>
@@ -36,7 +42,10 @@
         {{item().productName}}
       </a>
       <div class="flex items-center gap-4">
-        <button class="btn main-outline-btn px-2 py-1">
+        <button 
+          class="btn main-outline-btn px-2 py-1"
+          (click)="removeItemFromCart()"
+        >
           <mat-icon>delete</mat-icon>
         </button>
       </div>
