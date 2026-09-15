@@ -13,21 +13,30 @@
         <h1 class="text-2xl font-medium text-dark">
           {{product.name}}
         </h1>
+        <p>
+          You have {{quantityInCart}} of this item in your cart.
+        </p>
         <div class="mt-4 flex items-center gap-4">
           <p class="text-3xl font-semibold text-main-dark">
             {{product.price | currency:'GBP'}}
           </p>
         </div>
         <div class="flex gap-4 mt-6 items-end">
-          <button class="btn main-solid-btn px-3 py-2">
-            Add to Cart
+          <button 
+            [disabled]="quantity === quantityInCart"
+            (click)="updateCart()"
+            class="btn main-solid-btn px-3 py-2"
+          >
+            {{getButtonText()}}
           </button>
           <div class="w-28">
             <label class="block text-center text-sm font-medium mb-1 text-grey-1">
               Quantity
             </label>
-            <input 
-              type="search" 
+            <input
+              type="number" 
+              min="0"
+              [(ngModel)]="quantity"
               class="block w-full p-2.5 text-sm outline-none border-2 border-main-dark focus:border-dark hover:border-dark rounded transitioning" 
             />
           </div>
