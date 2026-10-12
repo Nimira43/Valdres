@@ -128,3 +128,7 @@ button {
 .mat-mdc-paginator .mat-mdc-select-arrow {
   color: var(--main-dark) !important;
 } 
+
+.sort-menu {
+  --mat-menu-container-color: #fff;
+}
