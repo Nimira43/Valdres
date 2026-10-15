@@ -40,18 +40,27 @@
       >
         <mat-icon>shopping_cart</mat-icon>
       </a>
-      <button 
-        class="btn main-outline-btn py-2 px-3"
-        routerLink="/account/login"
-      >
-        Login
-      </button>
-      <button 
-        class="btn main-outline-btn py-2 px-3"
-        routerLink="/account/register"
-      >
-        Register
-      </button>
+      @if (accountService.currentUser()) {
+        <button
+          class="btn main-outline-btn py-2 px-3"
+          (click)="logout()"
+        >
+          Logout        
+        </button>
+      } @else {
+        <button 
+          class="btn main-outline-btn py-2 px-3"
+          routerLink="/account/login"
+        >
+          Login
+        </button>
+        <button 
+          class="btn main-outline-btn py-2 px-3"
+          routerLink="/account/register"
+        >
+          Register
+        </button>
+      }
     </div>
   </div>
 </header>
