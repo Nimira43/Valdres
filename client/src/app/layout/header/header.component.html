@@ -6,7 +6,7 @@
     >
       Valdres
     </a>
-    <nav class="flex gap-3 my-2 uppercase text-lg">
+    <nav class="flex gap-3 my-2 text-lg">
       <a 
         routerLink="/"
         routerLinkActive="active" 
@@ -43,9 +43,10 @@
       @if (accountService.currentUser()) {
         <button
           class="btn main-outline-btn py-2 px-3"
-          (click)="logout()"
+          [matMenuTriggerFor]="menu"
         >
-          Logout        
+          <mat-icon>arrow_drop_down</mat-icon>
+          <span>{{accountService.currentUser()?.email}}</span>      
         </button>
       } @else {
         <button 
@@ -71,3 +72,31 @@
     class="fixed z-50"
   ></mat-progress-bar>
 }
+
+<mat-menu #menu="matMenu" class="top-nav-menu px-5">
+  <button 
+    mat-menu-item
+    class="px-3"
+    routerLink="/cart"
+  >
+    <mat-icon>shopping_cart</mat-icon>
+    My Cart
+  </button>
+  <button 
+    mat-menu-item
+    class="px-3"
+    routerLink="/orders"
+  >
+    <mat-icon>history</mat-icon>
+    My Orders
+  </button>
+  <mat-divider></mat-divider>
+  <button 
+    mat-menu-item
+    class="px-3"
+    (click)="logout()"
+  >
+    <mat-icon>logout</mat-icon>
+    Logout
+  </button>
+</mat-menu>

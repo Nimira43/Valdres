@@ -27,10 +27,6 @@ body {
   font-weight: 300;
 }
 
-button {
-  text-transform: uppercase !important;
-}
-
 .logo-text {
   font-family: 'Nova Script', system-ui;
 }
@@ -47,7 +43,6 @@ button {
   border-radius: 3px;
   font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;
   cursor: pointer;
   transition: var(--transitioning);
   border-width: 2px;
@@ -129,6 +124,7 @@ button {
   color: var(--main-dark) !important;
 } 
 
-.sort-menu {
+.sort-menu,
+.top-nav-menu {
   --mat-menu-container-color: #fff;
 }
