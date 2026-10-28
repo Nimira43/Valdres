@@ -8,57 +8,24 @@
       Register
     </h1>
 
-    <div class="flex flex-col gap-1">
-      <label for="firstName" class="text-sm text-grey-1">
-        Firstname
-      </label>
-      <input
-        id="firstName"
-        formControlName="firstName"
-        type="text"
-        autocomplete="given-name"
-        class="w-full bg-white text-dark border-2 border-grey-4 hover:border-grey-2 focus:border-main-dark focus:outline-none px-4 py-3 rounded transition-colors duration-500 ease-in-out"
-      />
-    </div>
-    <div class="flex flex-col gap-1">
-      <label for="lastName" class="text-sm text-grey-1">
-        Lastname
-      </label>
-      <input
-        id="lastName"
-        formControlName="lastName"
-        type="text"
-        autocomplete="family-name"
-        class="w-full bg-white text-dark border-2 border-grey-4 hover:border-grey-2 focus:border-main-dark focus:outline-none px-4 py-3 rounded transition-colors duration-500 ease-in-out"
-      />
-    </div>
-    
-    <div class="flex flex-col gap-1">
-      <label for="email" class="text-sm text-grey-1">
-        Email address
-      </label>
-      <input
-        id="email"
-        formControlName="email"
-        type="email"
-        autocomplete="email"
-        class="w-full bg-white text-dark border-2 border-grey-4 hover:border-grey-2 focus:border-main-dark focus:outline-none px-4 py-3 rounded transition-colors duration-500 ease-in-out"
-      />
-    </div>
-
-    <div class="flex flex-col gap-1">
-      <label for="password" class="text-sm text-grey-1">
-        Password
-      </label>
-      <input
-        id="password"
-        formControlName="password"
-        type="password"
-        autocomplete="new-password"
-        class="w-full bg-white text-dark border-2 border-grey-4 hover:border-grey-2 focus:border-main-dark focus:outline-none px-4 py-3 rounded transition-colors duration-500 ease-in-out"
-      />
-    </div>
-
+    <app-text-input
+      label="Firstname"
+      formControlName="firstName" 
+    />
+    <app-text-input
+      label="Lastname"
+      formControlName="lastName" 
+    />
+    <app-text-input
+      label="Email"
+      formControlName="email" 
+    />
+    <app-text-input
+      label="Password"
+      formControlName="password"
+      type="password" 
+    />
+      
     @if (validationErrors) {
       <div class="mb-3 p-4 bg-red-100 text-red-600">
         <ul class="list-none px-3">
@@ -69,13 +36,12 @@
       </div>
     }
 
-    <button type="submit" class="btn main-outline-btn w-full py-3 mt-2">
+    <button 
+      [disabled]="registerForm.invalid"
+      type="submit" 
+      class="btn main-outline-btn w-full py-3 mt-2"
+    >
       Register
     </button>
   </form>
-</div>
-
-<div class="max-w-lg-mx-auto mt-3 p-2">
-  <pre>Form values: {{registerForm.value | json}}</pre>
-  <pre>Form status: {{registerForm.status}}</pre>
 </div>

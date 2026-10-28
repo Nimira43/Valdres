@@ -1,0 +1,22 @@
+<div class="flex flex-col gap-1">
+  <label for="firstName" class="text-sm text-grey-1">
+    {{ label }}
+  </label>
+  <input
+    id="firstName"
+    [formControl]="control"
+    type={{ type }}
+    autocomplete="given-name"
+    class="w-full bg-white text-dark border-2 border-grey-4 hover:border-grey-2 focus:border-main-dark focus:outline-none px-4 py-3 rounded transition-colors duration-500 ease-in-out"
+  />
+  @if (control.hasError('required')) {
+    <span class="text-red-600">
+      {{ label }} is required
+    </span>
+  }
+  @if (control.hasError('email')) {
+    <span class="text-red-600">
+      Email is invalid
+    </span>
+  }
+</div>
